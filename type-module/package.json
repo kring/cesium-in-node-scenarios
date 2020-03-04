@@ -1,0 +1,7 @@
+{
+    "type": "module",
+    "scripts": {
+        "test": "npm run es",
+        "es": "node --version && node --experimental-modules with-import.js"
+    }
+}

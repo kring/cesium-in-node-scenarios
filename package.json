@@ -1,0 +1,19 @@
+{
+  "name": "cesium-in-node-scenarios",
+  "version": "1.0.0",
+  "description": "Testing various scenarios for loading Cesium in Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test-old": "rm -rf node_modules/.cache/esm && cd type-commonjs && npm run test",
+    "test-new": "rm -rf node_modules/.cache/esm && cd type-commonjs && npm run test && cd ../type-module && npm run test"
+  },
+  "author": {
+    "name": "Cesium GS, Inc.",
+    "url": "https://cesium.com"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cesium": "http://cesium-dev.s3-website-us-east-1.amazonaws.com/cesium/node12/cesium-1.67.0-node1233668.tgz",
+    "esm": "^3.2.25"
+  }
+}

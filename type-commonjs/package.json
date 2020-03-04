@@ -1,0 +1,8 @@
+{
+    "type": "commonjs",
+    "scripts": {
+        "test": "npm run commonjs && npm run esm",
+        "commonjs": "node --version && node with-require.js",
+        "esm": "node --version && node -r esm with-import.js"
+    }
+}
